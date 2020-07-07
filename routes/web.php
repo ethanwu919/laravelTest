@@ -23,3 +23,4 @@ Route::get('/about_us', function () {
     return view('about_us', ['name' => 'Laravel 6.0 範例']);
 });
 
+Route::get('/inspire', 'InspiringController@inspire');
