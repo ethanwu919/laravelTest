@@ -6,11 +6,19 @@ use Illuminate\Http\Request;
 
 class InspiringController extends Controller
 {
+
+    private $service;
+    public function __construct(InspiringService $inspiringService)
+    {
+        $this->service = $inspiringService;
+    }
+
     /**
      * @return string
      */
     public function inspire()
     {
-        return (new InspiringService())->inspire();
+        return $this->service->inspire();
     }
+
 }
