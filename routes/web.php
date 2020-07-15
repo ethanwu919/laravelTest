@@ -27,3 +27,4 @@ Route::get('/inspire', 'InspiringController@inspire');
 
 Route::get('/todo', 'TodoController@index');
 Route::post('/todo', 'TodoController@update');
+Route::get('/testRedis','RedisController@testRedis')->name('testRedis');
