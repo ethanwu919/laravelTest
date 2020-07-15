@@ -26,3 +26,4 @@ Route::get('/about_us', function () {
 Route::get('/inspire', 'InspiringController@inspire');
 
 Route::get('/todo', 'TodoController@index');
+Route::post('/todo', 'TodoController@update');
